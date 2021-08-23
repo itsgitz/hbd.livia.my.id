@@ -1,0 +1,22 @@
+{
+  "name": "dear-livia.my.id",
+  "version": "1.0.0",
+  "description": "Birthday web application",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://oauth2:3680a7d334c0f3313a3bf1f0e923d6253607bd76@github.com/itsgitz/dear-livia.my.id.git"
+  },
+  "keywords": [
+    "birthday"
+  ],
+  "author": "Anggit M Ginanjar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsgitz/dear-livia.my.id/issues"
+  },
+  "homepage": "https://github.com/itsgitz/dear-livia.my.id#readme"
+}

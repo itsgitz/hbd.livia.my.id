@@ -1,96 +1,154 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google" content="notranslate">
     <meta name="theme-color" content="#fd79a8">
     <meta name="robots" content="noindex">
     <meta name="googlebot" content="noindex">
-		<title>Happy birthday, Livia!</title>
-		<meta name="keywords" content="perspective, mockup, slideshow, transform, 3d, matrix, css" />
-		<meta name="author" content="Codrops" />
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/animate.css" />
-		<link rel="stylesheet" type="text/css" href="css/mockup4.css" />
-		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<body class="demo-4">
-		<div class="container">
+    <title>Happy birthday, Livia!</title>
+    <meta name="keywords" content="perspective, mockup, slideshow, transform, 3d, matrix, css" />
+    <meta name="author" content="Codrops" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Wendy+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/mockup.css" />
+    <link rel="stylesheet" type="text/css" href="css/book/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/book/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/ballon.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slideshow.js"></script>
+  </head>
+  <body class="demo-4">
+    <!-- main container -->
+    <div id="main-container">
       <div id="wrap" class="wrap">
-				<div class="mockup">
-					<img class="mockup__img" src="img/mockup4.jpg" />
-					<div class="mobile">
-						<ul id="slideshow-1" class="slideshow">
+        <div class="mockup">
+          <!-- big mockup image -->
+          <img class="mockup__img" src="img/mockup4.jpg" />
+          <!-- end of big mockup image -->
+
+          <!-- mobile slideshow -->
+          <div class="mobile">
+            <ul id="slideshow-1" class="slideshow">
               <li class="slideshow__item"><img src="img/livia/livia-1.jpg"></li>
-							<li class="slideshow__item"><img src="img/small/1.png"/></li>
-							<li class="slideshow__item"><img src="img/livia/livia-2.jpg"/></li>
-							<li class="slideshow__item"><img src="img/small/3.png"/></li>
-							<li class="slideshow__item"><img src="img/small/4.png"/></li>
-						</ul>
-					</div>
-					<div class="screen">
-						<ul id="slideshow-2" class="slideshow">
-							<li class="slideshow__item current"><img src="img/large/2.png"/></li>
+              <li class="slideshow__item"><img src="img/small/1.png"/></li>
+              <li class="slideshow__item"><img src="img/livia/livia-2.jpg"/></li>
+              <li class="slideshow__item"><img src="img/small/3.png"/></li>
+              <li class="slideshow__item"><img src="img/small/4.png"/></li>
+            </ul>
+          </div>
+          <!-- end of mobile slideshow -->
+
+          <!-- screen PC|Laptop|Tablet slideshow -->
+          <div class="screen">
+            <ul id="slideshow-2" class="slideshow">
+              <li class="slideshow__item current"><img src="img/large/2.png"/></li>
               <li class="slideshow__item"><img src="img/livia/birthday-card.jpeg"></li>
-							<li class="slideshow__item"><img src="img/large/1.png"/></li>
+              <li class="slideshow__item"><img src="img/large/1.png"/></li>
               <li class="slideshow__item"><img src="img/livia/birthday-card-3.jpeg" height="100%"></li>
-							<li class="slideshow__item"><img src="img/livia/livia-2.jpg" height="100%"/></li>
+              <li class="slideshow__item"><img src="img/livia/livia-2.jpg" height="100%"/></li>
               <li class="slideshow__item"><img src="img/large/3.png"></li>
               <li class="slideshow__item"><img src="img/livia/livia-1.jpg" height="100%"></li>
-							<li class="slideshow__item"><img src="img/large/4.png"/></li>
-						</ul>
-					</div>
-					<header class="codrops-header">
-            <h1>Happy birthday, Livia!<i>お誕生日おめでとうございます！！</i></h1>
-					</header>
-				</div>
-			</div>
-		</div><!-- /container -->
-		<script src="js/classie.js"></script>
-		<script src="js/main.js"></script>
-		<script>
-			(function() {
-				new Slideshow( document.getElementById( 'slideshow-1' ) );
-				setTimeout( function() {
-					new Slideshow( document.getElementById( 'slideshow-2' ) );
-				}, 1750 );
+              <li class="slideshow__item"><img src="img/large/4.png"/></li>
+            </ul>
+          </div>
+          <!-- end of screen slideshow -->
 
-				/* Mockup responsiveness */
-				var body = docElem = window.document.documentElement,
-					wrap = document.getElementById( 'wrap' ),
-					mockup = wrap.querySelector( '.mockup' ),
-					mockupWidth = mockup.offsetWidth;
+          <!-- header box -->
+          <header class="codrops-header">
+            <h1>Happy birthday, Livia!<i>お誕生日おめでとうございます！！</i><i>Selamat ulang tahun yang ke - (isi sendiri ...)</i></h1>
+          </header>
+          <!-- end of header box -->
+        </div>
+      </div>
 
-				scaleMockup();
+      <div class="p-4"></div>
+        <!-- book and balloon toggle container -->
+        <div class="container">
+        <div class="row">
 
-				function scaleMockup() {
-					var wrapWidth = wrap.offsetWidth,
-						val = wrapWidth / mockupWidth;
+        <!-- book animation -->
+          <div class="col-md-6">
+            <div class="main book-container">
+<ul id="bk-list" class="bk-list clearfix">
+            <li>
+              <div class="bk-book book-1 bk-bookdefault">
+                <div class="bk-front">
+                  <div class="bk-cover-back"></div>
+                  <div class="bk-cover">
+                    <h2>
+                      <span>Ini Buku</span>
+                      <span>Serangkai Kata</span>
+                    </h2>
+                  </div>
+                </div>
+                <div class="bk-page">
+                  <div class="bk-content bk-content-current">
+                    <p>Hello world!</p>
+                  </div>
+                  <div class="bk-content">
+                    <p>I'm ready!</p>
+                  </div>
+                  <div class="bk-content">
+                    <p>To go!</p>
+                  </div>
+                </div>
+                <div class="bk-back">
+                  <p>Pada hari Jumat, 28 Agustus 1998 (lupa lagi jam berapa, pokoknya antara sebelum jumatan atau sesudah jumatan) lahirlah bayi manusia berjenis kelamin perempuan. Ibu dan Ayahnya memberi dia nama, Livia.
+                  </p>
+                </div>
+                <div class="bk-right"></div>
+                <div class="bk-left">
+                  <h2>
+                    <span>Gitz</span>
+                    <span>Serangkai Kata</span>
+                  </h2>
+                </div>
+                <div class="bk-top"></div>
+                <div class="bk-bottom"></div>
+              </div>
+              <div class="bk-info">
+                <button class="bk-bookback rounded">Flip</button>
+                <button class="bk-bookview rounded">View inside</button>
+              </div>
+            </li>
+          </ul>
 
-					mockup.style.transform = 'scale3d(' + val + ', ' + val + ', 1)';
-				}
-				
-				window.addEventListener( 'resize', resizeHandler );
+            </div> 
+          </div>
+          <!-- end of book animation -->
 
-				function resizeHandler() {
-					function delayed() {
-						resize();
-						resizeTimeout = null;
-					}
-					if ( typeof resizeTimeout != 'undefined' ) {
-						clearTimeout( resizeTimeout );
-					}
-					resizeTimeout = setTimeout( delayed, 50 );
-				}
-
-				function resize() {
-					scaleMockup();
-				}
-			})();
-		</script>
-	</body>
+          <!-- balloon animation -->
+          <div class="col-md-6 p-3">
+            <div class="balloon-container">
+              <div class="balloon" style="width: 100%;">
+                <div><span class="span-balloon">H</span></div>
+                <div><span class="span-balloon">B</span></div>
+                <div><span class="span-balloon">D</span></div>
+              </div>
+              <div class="p-5"></div>
+              <div class="p-5"></div>
+              <div class="balloon-row-2" style="width: 100%;">
+                <div><span class="span-balloon">A</span></div>
+                <div><span class="span-balloon">Y</span></div>
+                <div><span class="span-balloon">!</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- end of balloon -->
+        </div>
+        <!-- end of book and balloon toggle container -->
+        <script src="js/book/book.js"></script>
+        <script src="js/book/init.js"></script>
+      </div>
+  </body>
 </html>

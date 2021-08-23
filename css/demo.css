@@ -225,8 +225,7 @@ ul.ref li {
 
 @media screen and (max-width: 30em) {
 	.wrap {
-		height: 100vh !important;
-		/* background: #3d4955; */
+		height: 550px !important;
 		background-color: #fd79a8;
 	}
 	.codrops-header {
