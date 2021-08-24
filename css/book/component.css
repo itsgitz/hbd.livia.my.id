@@ -39,9 +39,9 @@
 }
 
 .bk-info p {
-	line-height: 24px;
+	line-height: 1.5;
 	color: #444;
-	min-height: 160px;
+	/* min-height: 160px; */
 }
 
 .bk-info button {
