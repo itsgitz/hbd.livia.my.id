@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/itsgitz/dear-livia.my.id/issues"
   },
-  "homepage": "https://github.com/itsgitz/dear-livia.my.id#readme"
+  "homepage": "https://github.com/itsgitz/dear-livia.my.id#readme",
+  "devDependencies": {
+    "cssnano": "^5.0.8",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1"
+  }
 }
